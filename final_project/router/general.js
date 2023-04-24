@@ -106,6 +106,7 @@ public_users.get('/author/:author',function (req, res) {
         result.push(book)
   })
 
+  
   if (result.length > 0) {
     res.status(200).send(JSON.stringify(result));
   } else {
